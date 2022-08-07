@@ -57,6 +57,7 @@ namespace System.Collections
 				while ((line = reader.ReadLine()) != null)
 				{
 					if (more) outStr += "\n";
+					line = line.Replace("ي", "ی");
 					outStr += faConvertLine(line);
 					more = true;
 				}
